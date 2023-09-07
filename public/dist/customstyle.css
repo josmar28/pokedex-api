@@ -1,0 +1,30 @@
+.customtitle {margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+.loginimg {
+	width: 30%;
+	margin-top: 10%;
+}
+#timedate {
+  text-align:left;
+  width: 50%;
+  margin: 15px auto;
+  color:#fff;
+  border-left: 3px solid #ed1f24;
+  color: black;
+  margin-right: auto;
+  margin-left: -45px;
+}
+
+.tablelongtext {
+	display: inline-block;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}

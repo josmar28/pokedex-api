@@ -1,0 +1,12 @@
+.float1-active,.float2-active,.float3-active,.float4-active,.float1,
+.float2,
+.float3,
+.float4,
+#print-pds,
+.mypage,
+.hati, .btn-print {
+	display: none;
+}
+#personal-info {
+	color: white !important;
+}
