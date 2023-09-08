@@ -17,6 +17,7 @@ use Auth;
 
 class ApiCtrl extends Controller
 {
+//Moves
     public function moveActions (Request $req)
     {
         $match = array(

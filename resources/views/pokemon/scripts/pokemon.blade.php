@@ -12,7 +12,7 @@
     .find("input[type=checkbox], input[type=radio]")
        .prop("checked", "")
        .end();
-})
+    })
 
     function fetchdata() {
     	var loading = '<div class="text-center">'+

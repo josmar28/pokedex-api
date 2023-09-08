@@ -21,8 +21,8 @@
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <button class="dropdown-item" type="button" data-id="{{$em->id}}" id="btn_type_delete"><i class="far fa-trash-alt" ></i> Delete</button>
-                                            <button class="dropdown-item" type="button" data-id="{{$em->id}}" data-toggle="modal" id="btn_type_edit" data-target="#add-type-modal"><i class="far fa-edit"></i> Edit</button>
+                                            <button class="dropdown-item btn_type_delete" type="button" data-id="{{$em->id}}" id=""><i class="far fa-trash-alt" ></i> Delete</button>
+                                            <button class="dropdown-item btn_type_edit" type="button" data-id="{{$em->id}}" data-toggle="modal" id="" data-target="#add-type-modal"><i class="far fa-edit"></i> Edit</button>
                                         </div>
                                     </div>
                                 </td>
@@ -40,7 +40,7 @@
 <script src="{{ asset('public/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js')}}"></script>
 <script src="{{ asset('public/dist/js/pages/datatable/datatable-basic.init.js')}}"></script>
 <script>
-$("#btn_type_edit").click(function() {
+$(".btn_type_edit").click(function() {
     var url = "{{url('api/submit-edit-type')}}";
     $(this).ajaxSubmit({
             url: url,
@@ -70,7 +70,7 @@ $("#btn_type_edit").click(function() {
     });
 });
 
-$("#btn_type_delete").click(function() {
+$(".btn_type_delete").click(function() {
   
   if (confirm('Are you want to proceed this action?')) {
     	var url = "{{url('api/submit-delete-type')}}";

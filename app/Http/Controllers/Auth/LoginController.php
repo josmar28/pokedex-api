@@ -52,7 +52,8 @@ class LoginController extends Controller
             if($login->level == 'admin')
             {
                 return redirect()->route('admin');
-            }else
+            }
+            else
             {
               return redirect()->route('user');
             }
